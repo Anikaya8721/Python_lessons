@@ -25,8 +25,9 @@
 #     else:
 #         ans = m
 #     print(ans)
-#     output_file.write(str(ans) + "\n")
-# if __name__ == "_main_":
+#     output_file.write(str(ans) + "\n")    
+
+# if __name__ == "__main__":
 #     main()
 
 # Задача 12
