@@ -6,29 +6,25 @@
 
 # 5 -> 1 0 1 1 0
 # 2
-# def main():
-#     input_file = open("input.txt", "r")
-#     output_file = open("output.txt", "w")
-#     line = input_file.readline().split()
-#     n = int(line[0])
-#     k = 0
-#     m = 0
-#     for i in range(n):
-#         line = input_file.readline().split()
-#         if int(line[0]) == 0:
-#             k = k + 1
-#         if int(line[0]) == 1:
-#             m = m + 1
-#     print(m, k)
-#     if m > k:
-#         ans = k
-#     else:
-#         ans = m
-#     print(ans)
-#     output_file.write(str(ans) + "\n")    
 
-# if __name__ == "__main__":
-#     main()
+# import random
+
+# n = int(input())
+# m = [] 
+# max = 0
+# count = 0
+
+# for num in range(0, n):
+#     random_n = round(random.randint(0,1))
+#     m.append(random_n)
+
+# if max == 1: count = 0
+# if max == 0: count = 1
+# if max < count: max = count
+
+# print(m)
+# print(count+count)
+
 
 # Задача 12
 # Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате по математике. 
