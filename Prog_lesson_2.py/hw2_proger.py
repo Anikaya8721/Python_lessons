@@ -6,24 +6,22 @@
 
 # 5 -> 1 0 1 1 0
 # 2
-
+# вариант 1
 # import random
-
 # n = int(input())
 # m = [] 
 # max = 0
 # count = 0
-
 # for num in range(0, n):
 #     random_n = round(random.randint(0,1))
 #     m.append(random_n)
-
 # if max == 1: count = 0
 # if max == 0: count = 1
 # if max < count: max = count
-
 # print(m)
 # print(count+count)
+
+# вариант 2
 
 
 # Задача 12
