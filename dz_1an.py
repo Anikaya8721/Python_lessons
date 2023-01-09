@@ -4,7 +4,7 @@
 # - 7 -> да
 # - 1 -> нет
 # n = int(input())
-# if n <= 5:
+# if 0 < n <= 5: #0< чтоб при указании 0 не было что это будни
 #     print('Oh,no! Workday(')
 # elif n == 7 or n == 6:
 #     print('WOW! Weekend!!')
@@ -20,7 +20,8 @@
 #     for y in range(2):
 #         for w in range(2):
 #            for z in range(2): 
-#                 print(not(w and z) or not y or ( x !=  w))
+#                 if not(w and z or not y or (not x == (not w))):
+#                     print(x, y, w, z)
                     
 # 3. Напишите программу, которая принимает на вход координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 и выдаёт номер четверти плоскости, в которой находится эта точка (или на какой оси она находится).
 # *Пример:*
@@ -69,8 +70,8 @@
 # out 5.099
 
 # print('Введите координаты: ')
-# X1 = int(input('x1 = '))
-# X2 = int(input('x2 = '))
-# Y1 = int(input('y1 = '))
-# Y2 = int(input('y2 = '))
-# print(f'Расстояние между ними: = {((X1-X2)*(X1-X2)+(Y1-Y2)*(Y1-Y2))*2}')
+# X1 = int(input())
+# X2 = int(input())
+# Y1 = int(input())
+# Y2 = int(input())
+# print(f'{((X2-X1)**2+(Y2-Y1)**2)**0.5:0.4}')
