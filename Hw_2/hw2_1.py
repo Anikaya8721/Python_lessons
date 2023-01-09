@@ -19,3 +19,16 @@
 #     s += n % 10
 #     n //= 10
 # print(s)
+
+# 2 вариант:
+# num = input()
+# sum_digits = 0
+# power = len(num)-2  # здесь получаем степень
+# num = float(num)  # здесь преобразовываем
+# num*=int(10**power)  # делаем целочисленным
+# while num:
+#     sum_digits+=int(num%10)  #отсечение последней цифры
+#     num//=10                 #уменьшение на 1 цифру
+#     print(int(sum_digits))
+# 3 вариант:
+# print(sum(map(int, list(input("Введите дробное число: ").replace(".", "")))))

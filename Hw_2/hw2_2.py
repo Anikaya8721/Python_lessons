@@ -17,3 +17,13 @@
 #         print(f'{factorial (i)}')
 #     else:
 #         print(f'{factorial (i)}', end = ', ')
+
+# 2 вариант:
+# num = int(input())
+# sum_dig = 1
+# num_list = []
+# for i in range(num):
+#     sum_dig *= i+1
+#     num_list.append(sum_dig)
+# print(num_list)
+
