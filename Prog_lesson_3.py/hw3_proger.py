@@ -6,7 +6,30 @@
 # Ввод: 1
 # Вывод: 2
 
+# первый способ
+# n = int(input())
+# list_1 = list()
+# for i in range(n):
+#     x = int(input())
+#     list_1.append(x)
+# count = 0
+# k = int(input())
+# for i in range(len(list_1)):
+#     if list_1[i] == k:
+#         count += 1
+# print(count)
+
+# второй способ. В три строчки цикл for:
+# for i in list_1:  # принимает значение из списка
+#     if i == k:    # сравниваем, равно ли значение из списка нашему искомому значению К
+#         count += 1  # если равно, то увеличиваем каунт на +1
+
+# третий способ. Воспользоваться методом count:
+# print(list_1.count(k))  # работает, как со списками, так и со строками
+
+# мой вариант:
 # import random
+
 # A = int(input('В массиве чисел: '))
 # X = int(input('Число встречаемое в массиве: '))
 # array = []
@@ -22,6 +45,20 @@
 # freequent = max(set(list), key = list.count)
 # print(freequent)
 
+# вариант другого студента:
+# import random
+
+# n = int(input('Введите количество чисел в строке: '))
+# a = []
+# x = int(input('Введите искомое число: '))
+# count = 0
+
+# for i in range(n):
+#     a.append(random.randint(1,20))
+#     if a[i] == x: count +=1
+# if count == 0: print('Искомого числа нет')
+# else: print('Число', x, 'в строке', *a, 'встречается', count, 'раз')
+
 # Задача 18:
 # Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X.
 # Пользователь вводит натуральное число N – количество элементов в массиве и число, которое необходимо проверить - X.
@@ -33,7 +70,7 @@
 # 1 2 1 8 9 6 5 4 3 4
 # Вывод: 6
 
-# n = int(input())
+# n = int(input("Введите число: "))
 # list_1 = list()
 # for i in range(n):
 #     x = int(input())
@@ -72,18 +109,18 @@
 # Ввод: ноутбук
 # Вывод: 12
 
-# point = {1:'AEIOULNSTR',  2:'DG', 3:'BCMPb', 4:'FHVWY', 5:'K', 8:'JX', 10:'QZ'}
-# point_rus = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФЩЪ'}
+# points = {1:'AEIOULNSTR',  2:'DG', 3:'BCMPb', 4:'FHVWY', 5:'K', 8:'JX', 10:'QZ'}
+# points_rus = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФЩЪ'}
 # word = input('Введите слово на русском или англ.яз.: ').upper()
 # count = 0
 # for i in word:
 #     if i in 'AEIOULNSTRDGBCMPbFHVWYKJXQZ':
-#         for j in point:
-#             if i in point[j]:
-#                 count +=j
+#         for j in points:
+#             if i in points[j]:
+#                 count += j
 #     else:
-#         for j in point_rus:
-#             if i in point_rus[j]:
-#                 count +=j
+#         for j in points_rus:
+#             if i in points_rus[j]:
+#                 count += j
 
 # print('Стоимость слова:', count)
